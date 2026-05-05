@@ -53,6 +53,16 @@
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=omurillo17&theme=transparent&hide_border=true&stroke=00d4ff&ring=00d4ff&fire=00d4ff&currStreakLabel=00d4ff&sideLabels=c9d1d9&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=58a6ff" alt="GitHub Streak" width="55%"/>
 </div>
 
+---
+
+## <img src="https://media.giphy.com/media/cj87CxfRtrUifF3Ris/giphy.gif" width="28"> &nbsp;Contribution Graph
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=omurillo17&bg_color=0d1117&color=00d4ff&line=00d4ff&point=ffffff&area=true&area_color=00d4ff&hide_border=true" width="95%" alt="Activity Graph"/>
+</div>
+
+---
+
 <div align="center">
 
 <a href="https://linkedin.com/in/geronimocong/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
