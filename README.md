@@ -34,11 +34,11 @@ My work is built on a Linux-first environment, using **Python** and **Django** t
 
 I care about clean architecture, readable code, and systems that are simple to operate — not just simple to build.
 
-- 🐧 Daily driver: **Linux**
-- 🧠 Backend: **Python**, **Django**, **PostgreSQL**
-- ⚡ Frontend: **Next.js**, **React**, **TypeScript**, **Tailwind CSS**
-- 🔁 Automation: **n8n + AI**
-- 📦 DevOps: **Docker**, **Git**, **GitHub**, **Vercel**
+- Daily driver: **Linux**
+- Backend: **Python**, **Django**, **PostgreSQL**
+- Frontend: **Next.js**, **React**, **TypeScript**, **Tailwind CSS**
+- Automation: **n8n + AI**
+- DevOps: **Docker**, **Git**, **GitHub**, **Vercel**
 
 <br clear="right"/>
 
