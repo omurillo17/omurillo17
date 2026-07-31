@@ -4,7 +4,7 @@
 
 <br/><br/>
 
-<img src="./yo.jpeg" width="150" height="150" style="border-radius:50%;object-fit:cover;border:3px solid #8B5CF6;box-shadow:0 0 28px rgba(139,92,246,0.55);" alt="Gerónimo Murillo" />
+<img src="./assets/avatar-photo.png" width="200" alt="Gerónimo Murillo" />
 
 <br/><br/>
 
@@ -147,7 +147,7 @@ I care about clean architecture, readable code, and systems that are simple to o
 <div align="center">
 
 <img src="https://github-readme-stats.vercel.app/api?username=omurillo17&show_icons=true&theme=dark&hide_border=true&bg_color=0a0a0f&title_color=8B5CF6&icon_color=8B5CF6&text_color=e5e2f0&ring_color=8B5CF6" width="49%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=omurillo17&theme=dark&hide_border=true&background=0a0a0f&ring=8B5CF6&fire=8B5CF6&currStreakLabel=8B5CF6&sideLabels=e5e2f0&currStreakNum=e5e2f0&sideNums=e5e2f0&dates=8a86a3" width="49%" />
+<img src="https://streak-stats.demolab.com/?user=omurillo17&theme=dark&hide_border=true&background=0a0a0f&ring=8B5CF6&fire=8B5CF6&currStreakLabel=8B5CF6&sideLabels=e5e2f0&currStreakNum=e5e2f0&sideNums=e5e2f0&dates=8a86a3" width="49%" />
 
 <br/>
 
@@ -162,7 +162,7 @@ I care about clean architecture, readable code, and systems that are simple to o
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/omurillo17/omurillo17/output/dist/snake-dark.svg" alt="contribution snake animation" width="100%" />
+<img src="https://raw.githubusercontent.com/omurillo17/omurillo17/output/snake-dark.svg" alt="contribution snake animation" width="100%" />
 
 </div>
 
