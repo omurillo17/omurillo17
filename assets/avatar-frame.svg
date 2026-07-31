@@ -1,0 +1,58 @@
+<svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bgGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(210 210) scale(210)">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.28"/>
+      <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ringGrad" x1="0" y1="0" x2="420" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#c4b5fd"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+    <linearGradient id="coreGrad" x1="0" y1="0" x2="0" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#161222"/>
+      <stop offset="100%" stop-color="#0a0810"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="420" height="420" fill="url(#bgGlow)"/>
+
+  <!-- rotating dashed outer ring -->
+  <circle cx="210" cy="210" r="196" fill="none" stroke="#8B5CF6" stroke-opacity="0.25" stroke-width="1" stroke-dasharray="2 8">
+    <animateTransform attributeName="transform" type="rotate" from="0 210 210" to="360 210 210" dur="60s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- hex frame -->
+  <polygon points="210,40 355,122 355,298 210,380 65,298 65,122" fill="url(#coreGrad)" stroke="url(#ringGrad)" stroke-width="3"/>
+  <polygon points="210,58 340,131 340,289 210,362 80,289 80,131" fill="none" stroke="#8B5CF6" stroke-opacity="0.35" stroke-width="1"/>
+
+  <!-- inner avatar circle placeholder -->
+  <circle cx="210" cy="205" r="118" fill="#100c1a" stroke="#8B5CF6" stroke-width="2"/>
+  <circle cx="210" cy="205" r="118" fill="none" stroke="#8B5CF6" stroke-opacity="0.4" stroke-width="1" filter="url(#glow)"/>
+
+  <!-- monogram -->
+  <text x="210" y="230" text-anchor="middle" font-family="'Segoe UI', Ubuntu, Arial, sans-serif" font-size="88" font-weight="700" fill="#ffffff" filter="url(#glow)">GM</text>
+
+  <!-- corner brackets -->
+  <path d="M 30 70 L 30 30 L 70 30" stroke="#8B5CF6" stroke-width="3" fill="none"/>
+  <path d="M 390 70 L 390 30 L 350 30" stroke="#8B5CF6" stroke-width="3" fill="none"/>
+  <path d="M 30 350 L 30 390 L 70 390" stroke="#8B5CF6" stroke-width="3" fill="none"/>
+  <path d="M 390 350 L 390 390 L 350 390" stroke="#8B5CF6" stroke-width="3" fill="none"/>
+
+  <!-- status dot -->
+  <circle cx="322" cy="322" r="14" fill="#0a0810" stroke="#8B5CF6" stroke-width="2"/>
+  <circle cx="322" cy="322" r="6" fill="#8B5CF6">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- label -->
+  <text x="210" y="405" text-anchor="middle" font-family="'Courier New', monospace" font-size="13" letter-spacing="3" fill="#8B5CF6" opacity="0.8">SEVENTEEN CORP</text>
+</svg>

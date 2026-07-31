@@ -1,0 +1,111 @@
+<svg width="1500" height="500" viewBox="0 0 1500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#08070c"/>
+      <stop offset="55%" stop-color="#0d0a17"/>
+      <stop offset="100%" stop-color="#120a1f"/>
+    </linearGradient>
+
+    <linearGradient id="windowGrad" x1="0" y1="0" x2="0" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f0d18"/>
+      <stop offset="100%" stop-color="#0a0810"/>
+    </linearGradient>
+
+    <radialGradient id="glowPurpleTL" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 60) scale(420)">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowPurpleBR" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1400 460) scale(380)">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="nameGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 230) scale(420 90)">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <pattern id="dotGrid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.2" cy="1.2" r="1.2" fill="#8B5CF6" fill-opacity="0.16"/>
+    </pattern>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="windowClip">
+      <rect x="20" y="20" width="1460" height="460" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <!-- Outer background -->
+  <rect width="1500" height="500" fill="url(#bgGrad)"/>
+  <rect width="1500" height="500" fill="url(#dotGrid)"/>
+  <rect width="1500" height="500" fill="url(#glowPurpleTL)"/>
+  <rect width="1500" height="500" fill="url(#glowPurpleBR)"/>
+
+  <!-- Terminal window -->
+  <g clip-path="url(#windowClip)">
+    <rect x="20" y="20" width="1460" height="460" fill="url(#windowGrad)"/>
+    <rect x="20" y="20" width="1460" height="460" fill="url(#nameGlow)"/>
+
+    <!-- Title bar -->
+    <rect x="20" y="20" width="1460" height="50" fill="#110d1c"/>
+    <line x1="20" y1="70" x2="1480" y2="70" stroke="#8B5CF6" stroke-opacity="0.25" stroke-width="1"/>
+
+    <circle cx="52" cy="45" r="6" fill="none" stroke="#4b4560" stroke-width="1.4"/>
+    <circle cx="76" cy="45" r="6" fill="none" stroke="#8B5CF6" stroke-width="1.4"/>
+    <circle cx="100" cy="45" r="6" fill="none" stroke="#ffffff" stroke-opacity="0.7" stroke-width="1.4"/>
+
+    <text x="750" y="50" text-anchor="middle" font-family="'Courier New', monospace" font-size="15" fill="#8a86a3" letter-spacing="1">guest@seventeen-corp — zsh — 1500x500</text>
+
+    <!-- Corner brackets (content area) -->
+    <path d="M 55 100 L 55 85 L 70 85" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.55"/>
+    <path d="M 1445 100 L 1445 85 L 1430 85" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.55"/>
+    <path d="M 55 440 L 55 455 L 70 455" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.55"/>
+    <path d="M 1445 440 L 1445 455 L 1430 455" stroke="#8B5CF6" stroke-width="2" fill="none" opacity="0.55"/>
+
+    <!-- Prompt line 1 -->
+    <text x="70" y="140" font-family="'Courier New', monospace" font-size="22">
+      <tspan fill="#8B5CF6">guest</tspan><tspan fill="#5f5a75">@</tspan><tspan fill="#c4b5fd">seventeen-corp</tspan><tspan fill="#5f5a75">:~$ </tspan><tspan fill="#f2f0f8">whoami</tspan>
+    </text>
+
+    <!-- Big name -->
+    <text x="68" y="235" font-family="'Segoe UI', Ubuntu, Arial, sans-serif" font-size="66" font-weight="700" fill="#ffffff" filter="url(#softGlow)">Gerónimo Murillo</text>
+
+    <!-- Subtitle -->
+    <text x="70" y="278" font-family="'Courier New', monospace" font-size="26" fill="#c4b5fd" letter-spacing="2">Full Stack Developer</text>
+
+    <line x1="70" y1="308" x2="760" y2="308" stroke="#8B5CF6" stroke-opacity="0.35" stroke-width="1"/>
+
+    <!-- Prompt line 2 -->
+    <text x="70" y="350" font-family="'Courier New', monospace" font-size="19">
+      <tspan fill="#8B5CF6">guest</tspan><tspan fill="#5f5a75">@</tspan><tspan fill="#c4b5fd">seventeen-corp</tspan><tspan fill="#5f5a75">:~$ </tspan><tspan fill="#f2f0f8">cat stack.sh</tspan>
+    </text>
+
+    <!-- Stack output -->
+    <text x="70" y="388" font-family="'Courier New', monospace" font-size="22" fill="#e5e2f0">
+      <tspan fill="#8B5CF6">&gt; </tspan>Linux <tspan fill="#8B5CF6">•</tspan> Python <tspan fill="#8B5CF6">•</tspan> Django <tspan fill="#8B5CF6">•</tspan> Next.js
+    </text>
+    <text x="70" y="422" font-family="'Courier New', monospace" font-size="22" fill="#e5e2f0">
+      <tspan fill="#8B5CF6">&gt; </tspan>n8n + AI <tspan fill="#8B5CF6">•</tspan> Docker
+    </text>
+
+    <!-- Blinking cursor -->
+    <rect x="365" y="405" width="12" height="24" fill="#8B5CF6">
+      <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Brand mark bottom right -->
+    <rect x="1330" y="430" width="14" height="14" fill="none" stroke="#8B5CF6" stroke-width="2" transform="rotate(45 1337 437)"/>
+    <text x="1430" y="443" text-anchor="end" font-family="'Courier New', monospace" font-size="17" font-weight="700" fill="#8B5CF6" letter-spacing="4">SEVENTEEN CORP</text>
+  </g>
+
+  <!-- Outer window border -->
+  <rect x="20" y="20" width="1460" height="460" rx="18" fill="none" stroke="#8B5CF6" stroke-opacity="0.35" stroke-width="1.5"/>
+</svg>
